@@ -1,5 +1,5 @@
 import s from "./ImageGallery.module.css";
-import { ImageCard } from "./ImageCard/ImageCard.jsx";
+import { ImageCard } from "../ImageCard/ImageCard.jsx";
 
 export const ImageGallery = ({ images, onImageClick }) => {
   return (

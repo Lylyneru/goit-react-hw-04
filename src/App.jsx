@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Toaster } from "react-hot-toast";
+import { Toaster, toast } from "react-hot-toast";
 import { SearchBar } from "./components/SearchBar/SearchBar.jsx";
 import { ImageGallery } from "./components/ImageGallery/ImageGallery.jsx";
 import { Loader } from "./components/Loader/Loader.jsx";
@@ -33,7 +33,7 @@ export const App = () => {
           });
         }, 200);
       } catch {
-        Toaster.error("Something went wrong!");
+        toast.error("Something went wrong!");
         setError(true);
       } finally {
         setLoading(false);
